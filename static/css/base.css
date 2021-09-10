@@ -68,17 +68,19 @@ body {
 .border-black {
     border: 1px solid black !important;
 }
+
 .bg-black {
     background: #000 !important;
 }
+
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
@@ -94,7 +96,9 @@ a.category-badge > span.badge:hover {
     right: 10px;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-item {
     cursor: pointer;
 }
 
@@ -122,12 +126,13 @@ a.category-badge > span.badge:hover {
     }
 }
 
-/* pad the top when navbar is collapsed on mobile*/
-@media (max-width 991px) {
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
     }
+
     body {
-        height: calc(100vh-116px);
+        height: calc(100vh - 116px);
     }
 }
